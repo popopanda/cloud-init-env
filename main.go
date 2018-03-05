@@ -38,7 +38,7 @@ func main() {
 
 func parseYML(filename string) Environments {
 	var env Environments
-	reader, err := os.Open("input.yml")
+	reader, err := os.Open(filename)
 
 	if err != nil {
 		log.Fatal(err)
